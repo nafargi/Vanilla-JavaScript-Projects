@@ -4,18 +4,18 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
 
-
 function showError(input,message){
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
     const small = formControl.querySelector('small');
     small.innerHTML= message;
 }
-  function showSuccess(input) {
+function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
   }
-  function checkEmail(input){
+
+function checkEmail(input){
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if(re.test(input.value.trim())){
@@ -25,7 +25,7 @@ function showError(input,message){
     }
   }
 
-  function checkRequired(inputArr){
+ function checkRequired(inputArr){
       inputArr.forEach((input) => {
            if(input.value.trim() === ''){
               showError(input, `${getFieldName(input)} is required`);
@@ -35,12 +35,10 @@ function showError(input,message){
       });
   }
    
-  //--------get fiel name ------------------------
-  function getFieldName(input){
+ function getFieldName(input){
       return input.id.charAt(0).toUpperCase() + input.id.slice(1);
   }
 
-  //----check lengthof inout field------
   function checkLength(input ,min,max){
        if(input.value.length < min){
           showError(input,`${getFieldName(input)} must be less than ${min}
@@ -51,9 +49,7 @@ function showError(input,message){
        }
 
   }
-
-  //---------check password match--------------------
-   function checkPasswordMatch(input, input2){
+  function checkPasswordMatch(input, input2){
       if(input.value === input2.value){
               showSuccess(input2);
       }else{
@@ -61,7 +57,6 @@ function showError(input,message){
       }
    }
 
-  //--------Event listener---------------
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -70,23 +65,6 @@ form.addEventListener('submit', (e) => {
     checkLength(password,6,25);
     checkEmail(email);
     checkPasswordMatch(password,confirmPassword);
-    // let usernameString = username.value.length;
-    // console.log(typeof usernameString);
-    //    if(usernameString <= 3){
-    //     showError(username, 'Username must be at least 3 characters');
-
-    // }else{
-    //     showSuccess(username);
-    // }
-
-    // if(email.value === ''){
-    //     showError(email, 'Email is required');
-
-    // }else if(!isEmailValid(email.value)){
-    //     showError(email, 'Emailis not Valid');
-    // }
-    // else{
-    //     showSuccess(email);
-    // }
+   
 
 });
