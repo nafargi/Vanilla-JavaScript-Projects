@@ -9,9 +9,6 @@ This is a **Form Validator** built with vanilla JavaScript. It checks input fiel
 - Password validation (minimum length, matching confirmation)
 - Displays error messages and success highlights
 
-## **Live Demo**
-You can try the live demo of the project [here](https://your-live-demo-link.com).
-
 ## **Project Screenshot**
 
 <img src="/Form-Validator/img.png">
