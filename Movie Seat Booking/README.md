@@ -3,6 +3,7 @@
 This is a simple Movie Seat Booking application built with HTML, CSS, and Vanilla JavaScript. Users can select seats for a movie, see the total price, and store their selection using local storage. 
 ## Project Screenshots
 <img src="/Movie Seat Booking/seat.png">
+
 ## Features
 
 - **Seat Selection**: Users can click on available seats to select or deselect them.
