@@ -9,7 +9,6 @@ const occupiedSeat = document.querySelectorAll('.occupied');
 
 
 populateUI();
-
 let ticketPrice = +movieSelect.value;
 function setMovieData(movieIndex, moviePrice) {
   localStorage.setItem('selectedMovieIndex', movieIndex);
