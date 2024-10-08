@@ -10,6 +10,7 @@ function showError(input,message){
     const small = formControl.querySelector('small');
     small.innerHTML= message;
 }
+
 function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
