@@ -18,7 +18,6 @@ function generateTemplate(id,source,amount,time){
                 <i class="bi bi-trash delete"></i>
             </li> `;
 };
-
 function updateStatistics(){
      const totalIncome = transactions
                          .filter(transactions => transactions.amount > 0)
