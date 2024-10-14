@@ -31,7 +31,6 @@ function updateStatistics(){
      expense.textContent = totalExpense;
 };
 
-
 function addTransactionDOM(id, source, amount, time){
    if (amount >= 0){
         incomeList.innerHTML += generateTemplate(id,source,amount,time);
