@@ -8,7 +8,6 @@ const expense = document.getElementById('expense');
 
 let transactions = localStorage.getItem('transactions') !== null ? JSON.parse(localStorage.getItem('transactions')) : [];
 
-
 function generateTemplate(id,source,amount,time){
   return `<li data-id="${id}">
                 <p>
