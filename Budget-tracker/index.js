@@ -19,7 +19,6 @@ function generateTemplate(id,source,amount,time){
             </li> `;
 };
 
-
 function updateStatistics(){
      const totalIncome = transactions
                          .filter(transactions => transactions.amount > 0)
