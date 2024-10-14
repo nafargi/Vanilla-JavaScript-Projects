@@ -1,4 +1,3 @@
-
 const form = document.querySelector('.add');
 const incomeList = document.querySelector('.income-list');
 const expenseList = document.querySelector('.expense-list');
