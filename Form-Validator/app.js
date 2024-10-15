@@ -55,7 +55,6 @@ function checkEmail(input){
               showError(input2,`Password do not match `);
       }
    }
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
