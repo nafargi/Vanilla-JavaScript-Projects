@@ -64,5 +64,4 @@ form.addEventListener('submit', (e) => {
     checkEmail(email);
     checkPasswordMatch(password,confirmPassword);
    
-
 });
