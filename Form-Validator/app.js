@@ -45,7 +45,6 @@ function checkEmail(input){
            showError(input,`${getFieldName(input)} must be at most ${max} 
            characters`);
        }
-
   }
   function checkPasswordMatch(input, input2){
       if(input.value === input2.value){
