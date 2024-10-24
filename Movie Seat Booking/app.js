@@ -6,7 +6,6 @@ const movieSelect = document.getElementById('movie');
 const text = document.querySelector('.text');
 const text2 = document.querySelector('.text2');
 const occupiedSeat = document.querySelectorAll('.occupied');
-
 populateUI();
 let ticketPrice = +movieSelect.value;
 function setMovieData(movieIndex, moviePrice) {
