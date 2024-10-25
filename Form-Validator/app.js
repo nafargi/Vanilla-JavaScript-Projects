@@ -4,6 +4,69 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
 
+
+let user= {
+    name: 'nafargi',
+    age : 22,
+    isLogin: true,
+    isMarried: false,
+    blogs : [
+        {title: 'why mac & cheese rules', likes: 30, numComments: 15},
+        {title: '10 things to make with marmite', likes: 50, numComments: 20}
+    ],
+    loggin : function(){
+        this.isLogin= true;
+      return `user ${this.name} is logged in `
+    },
+    logOut : function(){
+        this.isLogin = false;
+        return `user ${this.name} is logged out`
+    }
+};
+
+  console.log(user.blogs.forEach( (blogs) =>{
+       console.log(blogs.title, blogs.likes);
+  }
+
+  ));
+//  let user = 
+//     [
+//         {
+//             id: 1,
+//             name: 'John Doe',
+//             email: 'johndoe@example.com',
+//             login: function(){
+//                 console.log('User logged in is john doe');
+//             }
+//         },
+//         {
+//             id: 2,
+//             name: 'nafargi',
+//             email: 'nafi@example.com',
+//             login: function(){
+//                 console.log('User logged in is nafargi');
+//             }
+//         },
+//         {
+//             id: 3,
+//             name: 'sinahawa',
+//             email: 'sini@example.com',
+//             login: function(){
+//                 console.log('User logged in is sinhawa');
+//             }
+//         },
+//         {
+//             id: 4,
+//             name: 'nahemiya',
+//             email: 'nahi@example.com',
+//             login: function(){
+//                 console.log('User logged in is nahemiya');
+//             }
+//         }
+//     ];
+//  console.log(user.forEach((user)=> user.login()));
+
+
 function showError(input,message){
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
