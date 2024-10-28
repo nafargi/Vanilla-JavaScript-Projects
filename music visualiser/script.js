@@ -9,7 +9,6 @@ const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 const audioSource = audioCtx.createMediaElementSource(audio);
 const analyser = audioCtx.createAnalyser();
 
-// Connect the nodes: audio -> analyser -> output
 audioSource.connect(analyser);
 analyser.connect(audioCtx.destination);
 
