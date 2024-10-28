@@ -13,7 +13,6 @@ const analyser = audioCtx.createAnalyser();
 audioSource.connect(analyser);
 analyser.connect(audioCtx.destination);
 
-// Configure analyser
 analyser.fftSize = 256; // Determines frequency resolution
 const bufferLength = analyser.frequencyBinCount;
 const dataArray = new Uint8Array(bufferLength);
