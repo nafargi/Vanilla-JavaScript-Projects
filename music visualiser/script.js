@@ -43,7 +43,6 @@ function drawVisualizer() {
   }
 }
 
-// Start visualizer when audio plays
 audio.onplay = () => {
   audioCtx.resume();
   drawVisualizer();
