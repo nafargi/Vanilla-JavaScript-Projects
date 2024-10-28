@@ -21,7 +21,6 @@ function drawVisualizer() {
   
   analyser.getByteFrequencyData(dataArray);
 
-  // Clear canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   const barWidth = (canvas.width / bufferLength) * 2.5;
