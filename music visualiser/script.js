@@ -19,7 +19,6 @@ const dataArray = new Uint8Array(bufferLength);
 function drawVisualizer() {
   requestAnimationFrame(drawVisualizer);
   
-  // Get frequency data
   analyser.getByteFrequencyData(dataArray);
 
   // Clear canvas
