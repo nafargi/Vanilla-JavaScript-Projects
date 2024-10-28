@@ -31,7 +31,6 @@ function drawVisualizer() {
   let barHeight;
   let x = 0;
 
-  // Draw bars based on frequency data
   for (let i = 0; i < bufferLength; i++) {
     barHeight = dataArray[i];
 
