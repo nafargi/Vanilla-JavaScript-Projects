@@ -2,11 +2,9 @@ const audio = document.getElementById('audio');
 const canvas = document.getElementById('visualizer');
 const ctx = canvas.getContext('2d');
 
-// Set canvas size
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// Create Web Audio API context and nodes
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 const audioSource = audioCtx.createMediaElementSource(audio);
 const analyser = audioCtx.createAnalyser();
