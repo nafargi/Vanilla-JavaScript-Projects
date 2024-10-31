@@ -13,6 +13,7 @@ form.addEventListener('submit',(e) => {
         }else{
             questions[index].classList.add('wrong-answer');
         }
+        
     });
      scrollTo(0,0);
      result.classList.remove('hide');
