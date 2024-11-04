@@ -45,7 +45,6 @@ audio.onplay = () => {
   drawVisualizer();
 };
 
-
 let mic, fft;
 
 function setup() {
