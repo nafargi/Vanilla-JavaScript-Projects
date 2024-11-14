@@ -24,7 +24,6 @@ function updatePrice(){
 
    setMovieData(movieSelect.selectedIndex, movieSelect.value);  
 }
-
 function populateUI() {
     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
   
