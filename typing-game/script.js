@@ -7,7 +7,6 @@ const settingsBtn = document.getElementById('settings-btn');
 const settings = document.getElementById('settings');
 const settingsForm = document.getElementById('settings-form');
 const difficultySelect = document.getElementById('difficulty');
-
 const words = [];
 async function names(){
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
