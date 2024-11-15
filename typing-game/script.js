@@ -79,7 +79,6 @@ text.addEventListener('input', e => {
 
    }
 });
-
 settingsBtn.addEventListener('click',() =>settings.classList.toggle('hide'));
 difficultySelect.addEventListener('change', e =>{
     difficulty = e.target.value;
